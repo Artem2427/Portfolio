@@ -125,13 +125,13 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
-  color: #fff;
+  color: #000;
 }
 
 /*--------------------*/
 
 body {
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
@@ -157,8 +157,8 @@ body._lock {
 }
 
 .header {
+  color: #fff;
   background: url(../img/main_image.png) right top no-repeat, #000;
-  height: 800px;
   /* 576px - 768px */
   /* 320px - 576px */
 }
@@ -245,6 +245,7 @@ body._lock {
   font-weight: 700;
   font-size: 48px;
   padding-bottom: 30px;
+  color: #fff;
 }
 
 .header__line {
@@ -348,7 +349,7 @@ body._lock {
   left: -100%;
   width: 50%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   -webkit-transition: left 0.5s ease 0s;
   -o-transition: left 0.5s ease 0s;
   transition: left 0.5s ease 0s;
@@ -425,12 +426,13 @@ body._lock {
 
 .slider {
   position: relative;
+  padding-bottom: 50px;
 }
 
 .slider .slick-arrow {
   position: absolute;
   background-position: right bottom;
-  bottom: 0;
+  bottom: 50px;
   right: 0;
   font-size: 0;
   width: 50px;
@@ -505,6 +507,49 @@ body._lock {
           box-shadow: 0px 5px 10px yellow;
 }
 
+.technology {
+  text-align: center;
+}
+
+.technology__title {
+  padding: 100px 0px 72px 0px;
+  font-weight: 800;
+  line-height: 44px;
+  font-size: 36px;
+}
+
+.technology__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.technology__image {
+  padding-bottom: 32px;
+  width: 60px;
+  height: 90px;
+}
+
+.technology__wrap {
+  width: 100%;
+}
+
+.technology__wrap h3 {
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.technology__wrap p {
+  line-height: 22px;
+}
+
 /* 992px - 1200px */
 
 /* 768px - 992px */
@@ -521,6 +566,10 @@ body._lock {
   .header .header__network {
     padding-left: 340px;
   }
+
+  .container {
+    width: 1170px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -530,6 +579,10 @@ body._lock {
 
   .header .header__network {
     padding-left: 240px;
+  }
+
+  .container {
+    width: 960px;
   }
 }
 
@@ -542,6 +595,18 @@ body._lock {
     padding-left: 165px;
     padding-right: 36px;
   }
+
+  .container {
+    width: 820px;
+  }
+
+  .technology__wrap h3 {
+    font-size: 18px;
+  }
+
+  .technology__wrap p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -553,6 +618,10 @@ body._lock {
     padding-left: 95px;
     padding-right: 26px;
   }
+
+  .container {
+    width: 720px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -563,6 +632,32 @@ body._lock {
   .header .header__network {
     padding-left: 65px;
     padding-right: 16px;
+  }
+
+  .container {
+    width: 640px;
+  }
+
+  .technology__title {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .technology__content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .technology__wrap {
+    padding-bottom: 30px;
+  }
+
+  .technology__image {
+    padding-bottom: 15px;
+  }
+
+  .technology__wrap h3 {
+    padding-bottom: 15px;
   }
 }
 
@@ -627,16 +722,28 @@ body._lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 25px;
+    margin-right: 0;
+  }
+
+  .header .slider .slick-dots li:first-child {
+    padding-left: 0;
   }
 
   .header .slider .slick-dots li button {
     width: 48px;
     height: 48px;
   }
+
+  .container {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 380px) and (min-width: 320px) {
+  .header .header {
+    height: 600px;
+  }
+
   .header .header__logo p {
     font-size: 11px;
   }
@@ -669,5 +776,21 @@ body._lock {
 
   .header .header__line {
     font-size: 14px;
+  }
+
+  .header .header__btn {
+    padding: 15px 53px;
+  }
+
+  .technology__title {
+    font-size: 24px;
+  }
+
+  .technology__wrap h3 {
+    font-size: 14px;
+  }
+
+  .technology__wrap p {
+    font-size: 12px;
   }
 }
