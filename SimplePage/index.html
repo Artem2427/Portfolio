@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GOLDEN</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,600;0,700;1,400&family=Roboto+Slab&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="js/script.js">
+	<link rel="stylesheet" href="js/jquery-3.3.1.min.js"> -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<div class="container header__container">
+					<div class="header__wrapper">
+						<a href="#" class="header__logo">Golden</a>
+						<!-- Заготовка на бургер -->
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<!-- Конец бургера -->
+						<nav>
+							<ul class="header__menu ">
+								<li><a href="#">ГОЛОВНА</a> </li>
+								<li><a href="#SER">СЕРВІС</a></li>
+								<li><a href="#por">ГАЛЕРЕЯ</a></li>
+								<li><a href="#about">ПРО НАС</a> </li>
+								<li><a href="#cont">ЗВ'ЯЗОК</a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class=" header__title ">
+				<!-- <span><em>Welcome To Our Studio!</em></span> -->
+				<h1>Ласкаво просимо в нашу студію <strong>GOLDEN!</strong></h1>
+				<a href="#" class="header__button">Узнати більше</a>
+			</div>
+		</div>
+	</header>
+	<section class="service">
+		<div class="container">
+			<h2 class="service__title" id="SER">СЕРВІС</h2>
+			<p class="service__line"><em>Ми зацікавлені у відгуках наших клієнтів.</em> </p>
+			<div class="service__wrapper">
+				<div class="wrapper__trade">
+					<div class="wrapper__image">
+						<img src="img/Icon-Basket.png" alt="" class="wrapper__img">
+					</div>
+					<div class="wrapper__content">
+						<h3 class="wrapper__title">Електронна комерція</h3>
+						<p>
+							Все є в інтернеті, послуги, ціни, можливість
+							замовлення залу по телефону або інтернету.
+						</p>
+					</div>
+				</div>
+				<div class="wrapper__trade">
+					<div class="wrapper__image">
+						<img src="img/computer.png" alt="" class="wrapper__img">
+					</div>
+					<div class="wrapper__content">
+						<h3 class="wrapper__title">Чуйний веб дизайн</h3>
+						<p>
+							Сайт зроблений за останніми
+							тенденціями і постійно обновляеться
+						</p>
+					</div>
+				</div>
+				<div class="wrapper__trade">
+					<div class="wrapper__image">
+						<img src="img/Icon-Locked.png" alt="" class="wrapper__img">
+					</div>
+					<div class="wrapper__content">
+						<h3 class="wrapper__title">Веб-безпека</h3>
+						<p>Ми контролюємо наших працівників в
+							інтернеті, всі защіти зроблені на відмінно.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="por">
+		<div class="container">
+			<h2 class="portfolio__title">ГАЛЕРЕЯ</h2>
+			<p class="portfolio__line"><em>Наші роботи, зроблені майстрами свого діла.</em></p>
+			<div class="portfolio__wrapper">
+				<div class="portfolio__1">
+					<img src="img/Image-9.png" alt="" id="myImg1" class="image">
+					<div id="myModal1" class="modal">
+						<span class="close" onclick="document.getElementById('myModal1').style.display='none'">&times;</span>
+						<img id="img01" class="modal-content">
+						<div id="caption1"></div>
+					</div>
+					<div class="portfolio__together">
+						<h3 class="portfolio__title3">Ebony & Ivory</h3>
+						<p class="portfolio__line3"><em>Лічний бренд</em></p>
+					</div>
+				</div>
+				<div class="portfolio__1">
+					<img src="img/Image-8.png" alt="" id="myImg2" class="image">
+					<div id="myModal2" class="modal">
+						<span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+						<img id="img02" class="modal-content">
+						<div id="caption2"></div>
+					</div>
+					<div class="portfolio__together">
+						<h3 class="portfolio__title3">Стартовий набір</h3>
+						<p class="portfolio__line3"><em>Поліграфічний дизайн</em></p>
+					</div>
+				</div>
+				<div class="portfolio__1">
+					<img src="img/Image-7.png" alt="" id="myImg3" class="image">
+					<div id="myModal3" class="modal">
+						<span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+						<img id="img03" class="modal-content">
+						<div id="caption3"></div>
+					</div>
+					<div class="portfolio__together">
+						<h3 class="portfolio__title3">Розумний плакат</h3>
+						<p class="portfolio__line3"><em>Поліграфічний дизайн</em></p>
+					</div>
+				</div>
+				<a class="portfolio__button">MORE</a>
+			</div>
+			<div class="portfolio__wrapper1">
+				<div class="portfolio__1">
+					<img src="img/Image-6.png" alt="" id="myImg4" class="image">
+					<div id="myModal4" class="modal">
+						<span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+						<img id="img04" class="modal-content">
+						<div id="caption4"></div>
+					</div>
+					<div class="portfolio__together">
+						<h3 class="portfolio__title3">Вінілова пластинка </h3>
+						<p class="portfolio__line3"><em>Макет продукта</em></p>
+					</div>
+				</div>
+				<div class="portfolio__1">
+					<img src="img/Image-5.png" alt="" id="myImg5" class="image">
+					<div id="myModal5" class="modal">
+						<span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
+						<img id="img05" class="modal-content">
+						<div id="caption5"></div>
+					</div>
+					<div class="portfolio__together">
+						<h3 class="portfolio__title3">Шаблон сайта</h3>
+						<p class="portfolio__line3"><em>Веб дизайн</em></p>
+					</div>
+				</div>
+				<div class="portfolio__1 ">
+					<img src="img/Image-4.png" alt="" id="myImg6" class="image">
+					<div id="myModal6" class="modal">
+						<span class="close" onclick="document.getElementById('myModal6').style.display='none'">&times;</span>
+						<img id="img06" class="modal-content">
+						<div id="caption6"></div>
+					</div>
+					<div class="portfolio__together">
+						<h3 class="portfolio__title3">Незвичайний логотип</h3>
+						<p class="portfolio__line3"><em>Брендовий</em></p>
+					</div>
+				</div>
+				<a class=" portfolio__button1">HIDE</a>
+			</div>
+		</div>
+	</section>
+	
+	<section class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__line">
+					<p>
+						© Всі права зихищені
+					</p>
+				</div>
+				<div class="footer__icon">
+					<p></p>
+					<a href="https://twitter.com/?lang=ru" target="_blank"><img src="img/twitter.png" alt=""></a>
+					<a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png">
+						<a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt=""></a>
+						<a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt=""></a>
+						</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
