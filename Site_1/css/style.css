@@ -512,7 +512,7 @@ body._lock {
   list-style: none;
   margin: 0 -5px;
   opacity: 0.5;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 
 .slider .slick-dots li:last-child {
@@ -906,6 +906,10 @@ body._lock {
     padding: 70px 0 70px 0;
   }
 
+  .work__slider .swiper-scrollbar {
+    width: 75%;
+  }
+
   .work__slider .swiper-notification {
     padding-bottom: 70px;
   }
@@ -1113,5 +1117,9 @@ body._lock {
   .work__slider .swiper-scrollbar-drag {
     height: 9px;
     top: -1px;
+  }
+
+  .work__slider-wrapper {
+    padding-bottom: 30px;
   }
 }
